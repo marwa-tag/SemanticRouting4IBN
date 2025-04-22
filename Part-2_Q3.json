@@ -1,0 +1,99 @@
+"name": "Authentication Intent", 
+"utterances": [
+"Verify the identity of all incoming devices connecting to the enterprise network from Zone A",
+"All new devices connecting from Zone A must be authenticated before they can join the enterprise network",
+"Restrict session initiation in the private 5G slice to registered user equipment only",
+"Sessions in the private 5G slice must be initiated exclusively by user equipment that has been registered",
+"Prevent any unverified SIM profiles from gaining control plane access",
+"Access to the control plane must be denied to all SIM profiles that haven’t been verified",
+"Enable multi-factor authentication for admin-level users when they access core services",
+"Require multiple authentication factors for administrators attempting to use core functions",
+"Validate subscriber identity via IMSI prior to allowing AMF access",
+"Before permitting AMF access, the subscriber's identity must be confirmed using their IMSI"
+]
+
+
+"name":"Load Balancing Intent",
+"utterances":[
+"Spread out high-data users equally among the closest gNodeBs",
+"Ensure high-throughput users are evenly assigned to their nearest gNodeBs",
+"Redirect user traffic from congested UPFs to standby nodes located in Region B",
+"Move sessions currently handled by overloaded UPFs to alternative nodes available in Region B",
+"Adjust resource allocation for slices on the fly to accommodate a spike in video demand",
+"Dynamically assign slice-level resources to cope with an increase in video streaming traffic",
+"Reroute latency-sensitive traffic through underutilized transport paths",
+"Direct low-latency data flows to transport routes experiencing minimal congestion",
+"Distribute data plane tasks evenly across both edge and central data centers",
+"the data plane load is shared between central and edge infrastructure nodes"
+]
+
+"name":"Fault Recovery Intent",
+"utterances":[
+"Initiate automatic traffic redirection upon detecting an SMF fault in Zone 2",
+"If the SMF in Zone 2 fails, the system should automatically reroute traffic",
+"Reboot the non-operational UPF and bring all active sessions back online without delay",
+"Recover the failed UPF and reinstate current sessions as quickly as possible",
+"Redirect control signaling to a standby AMF in the event of a crash",
+"In case the AMF fails, reroute control operations to the backup instance",
+"Restart the affected gNodeB modules in Sector C once a fault is identified",
+"Following failure detection, reboot the gNodeB parts in Sector C",
+"Activate interim functional instances to support services while faulty NFs are being restored",
+"Launch placeholder functions to take over operations from failed NFs during the recovery process"
+]
+
+"name":"Slice Scaling Intent",
+"utterances":[
+"Raise the bandwidth assigned to the emergency slice by 30%",
+"Expand the bandwidth provision for the emergency services slice by 30%",
+"Reduce resource allocation to the education slice outside of peak usage times",
+"Lower the footprint of the education slice during off-peak periods to save resources",
+"Temporarily increase CPU resources assigned to the industrial IoT slice",
+"Allocate more CPU capacity to the industrial IoT slice for a limited period",
+"Enlarge the transport slice to support more data streams from autonomous vehicles",
+"Increase the capacity of the transport slice to accommodate a higher volume of AV traffic",
+"Minimize the computational resources used by the gaming slice during off-hours",
+"Lower the gaming slice’s compute usage overnight to optimize efficiency"
+]
+
+"name":"Security Monitoring Intent",
+"utterances":[
+"Keep watch for suspicious handover behaviors in the city core",
+"Continuously observe the urban core for any irregular handover activity",
+"Send a notification when abnormal authentication failures occur in the core network",
+"Trigger an alert upon detecting unexpected increases in authentication failures within the core",
+"Identify and notify of denial-of-service behaviors appearing on Slice-7",
+"If Slice-7 shows DoS-type patterns, detect them and report immediately",
+"Monitor signaling surges that could be linked to rogue base stations",
+"Keep tabs on signaling spikes that might be signs of unauthorized cell towers",
+"Review NEF access logs and raise alerts for anything suspicious",
+"Perform audits on the NEF’s access logs and report any irregularities found"
+]
+
+"name":"Energy Optimization Intent",
+"utterances":[
+"Lower energy consumption of underused gNodeBs when demand is low.",
+"Minimize power usage at gNodeBs that are not fully utilized during off-peak periods",
+"Switch idle edge nodes in Region D to energy-efficient mode",
+"Activate power-saving mode on edge servers in Region D that are currently not in use",
+"Disable redundant network functions on the fly when traffic load drops below 30%",
+"Automatically deactivate extra NFs when current utilization is less than 30%",
+"Improve RAN energy efficiency overnight in rural zones",
+"Streamline energy use in the RAN during nighttime hours in less populated areas",
+"Enable sustainable energy operation when load is sufficiently low",
+"Transition to eco-friendly power mode when network traffic permits"
+]
+
+"name": "Deployment Intent",
+"utterances": [
+		"Deploy a new gNodeB (5G base station) in the Montreal downtown area to improve 5G coverage",
+		"Install a new 5G base station in downtown Montreal to boost network coverage",
+		"Set up a gNodeB in central Montreal to enhance 5G signal availability",
+		"Please initiate the deployment of a new gNodeB in the Montreal downtown area to strengthen 5G coverage",
+		"Deploy a new gNodeB in downtown Montreal to improve coverage",
+		"Don’t leave downtown Montreal without improved 5G coverage—deploy the gNodeB",
+		"Roll out an additional UPF in the Toronto data center to handle increased traffic demand",
+		"Deploy another UPF unit in the Toronto facility to manage higher traffic volumes",
+		"Install an extra UPF at the Toronto data center to address the surge in traffic demand",
+		"Install an extra UPF at the Toronto data center to address the surge in traffic demand"
+]
+		
